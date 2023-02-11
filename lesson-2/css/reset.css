@@ -44,7 +44,7 @@ button {
 	background-color: inherit;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 	background: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
 }
 /* ======================================================================================================================================================== */
@@ -89,7 +89,7 @@ h1:not(:last-child) {
 	color: #228b22;
 }
 .task__body {
-	overflow: auto;
+	overflow-x: auto;
 }
 .task__body p:not(:last-child) {
 	margin-bottom: 10px;
