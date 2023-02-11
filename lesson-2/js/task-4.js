@@ -1,6 +1,6 @@
 // Декларуємо константи
 const CENTIMETR_TO_METR_RATIO = 0.01;
-const CENTIMETR_TO_KILOMETR_RATIO = 0.001;
+const CENTIMETR_TO_KILOMETR_RATIO = 0.00001;
 
 // Робимо запит довжини елементу у користувача
 let centimetrs = parseFloat(prompt('Введіть довжину елементу в см', '0'));
