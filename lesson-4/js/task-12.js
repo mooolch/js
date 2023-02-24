@@ -29,5 +29,5 @@ else if (apple === 3) prize = '500грн !!!'
 else if (pinaple === 3) prize = '1000грн !!!'
 else prize = 'дешеву цукерку на паличці.'
 
-let message = `Ви виграли - ${prize}`
-let el = (document.querySelector('.task__body').innerHTML = `<p>${message}</p>`)
+const el = (document.querySelector('.task__body').innerHTML = `<p>Ви виграли - ${prize}</p>`)
+
