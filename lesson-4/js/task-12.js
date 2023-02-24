@@ -2,30 +2,25 @@ let pear = 0,
 	peach = 0,
 	apple = 0,
 	pinaple = 0,
-	prize,
-	fruit
+	prize
 
 for (let i = 0; i < 3; i++) {
-	let randomNum = 1 + Math.floor(Math.random() * 4 - 1 + 1)
-	switch (randomNum) {
+	const randomFruitNum = 1 + Math.floor(Math.random() * 4 - 1 + 1)
+	switch (randomFruitNum) {
 		case 1:
-			fruit = 1
 			pear++
 			break
 		case 2:
-			fruit = 2
 			peach++
 			break
 		case 3:
-			fruit = 3
 			apple++
 			break
 		case 4:
-			fruit = 4
 			pinaple++
 			break
 	}
-	document.write(`<div class="img"><img src="../img/${fruit}.png" alt="Fruit"></div>`)
+	document.write(`<div class="img"><img src="../img/${randomFruitNum}.png" alt="Fruit"></div>`)
 }
 
 if (peach === 3) prize = '100грн !!!'
