@@ -1,0 +1,57 @@
+table {
+	font-size: 24px;
+	border-spacing: 10px;
+	border-collapse: separate;
+	border: 2px solid red;
+}
+td {
+	border: 2px solid red;
+	text-align: center;
+	padding: 10px;
+}
+.picture {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.picture img {
+	height: 250px;
+}
+.game-btn {
+	padding: 8px 40px;
+	border-radius: 20px;
+	background-color: rebeccapurple;
+	transition: transform 0.1s ease 0s;
+}
+.game-btn:active {
+	transform: translatey(3%);
+}
+
+.banner {
+	display: block;
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 300px;
+	position: relative;
+}
+.banner img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.banner h1 {
+	font-family: 'Ubuntu';
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(36, 35, 35, 0.6);
+	margin-bottom: 0px;
+}
