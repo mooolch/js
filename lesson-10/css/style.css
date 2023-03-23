@@ -1,0 +1,9 @@
+img{
+    padding: 10px;
+}
+
+.task__body{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
