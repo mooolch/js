@@ -1,0 +1,24 @@
+table,
+td {
+	border: 2px green solid;
+	border-radius: 5px;
+	padding: 10px;
+	border-spacing: 15px;
+}
+
+.task__body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.task__body img {
+	width: 350px;
+	height: 350px;
+	object-fit: cover;
+	transition: all 0.3s ease 0s;
+}
+
+.task__body img:hover {
+	transform: scale(1.1);
+}
