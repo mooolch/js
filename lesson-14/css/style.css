@@ -1,0 +1,12 @@
+button {
+	padding: 8px 40px;
+	border-radius: 20px;
+	background-color: rebeccapurple;
+	transition: transform 0.1s ease 0s,background-color 0.3s ease 0s;
+}
+button:active {
+	transform: translatey(5%);
+}
+button:hover{
+    background-color: orangered;
+}
