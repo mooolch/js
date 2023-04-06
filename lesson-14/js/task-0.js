@@ -36,14 +36,28 @@ class TTime {
 	}
 	//========================================================================================================================================================
 	decreaseHours(value) {
-		this.hours = (this.hours - value) % 24
+		this.hours = (this.hours - value + 24) % 24
 	}
+	decreaseMinutes(value) {
+		const total = Math.abs(this.hours * 60 + this.minutes - value)
+		this.hours = Math.floor(total / 60) % 24
+		this.minutes = total % 60
+	}
+	//=========================================================================================
+	// кое как оно конечно работает, но только если методы применять по отдельности, если запустить их вместе будет беда(
+	// к примеру
+	// t1.decreaseHours(12)
+	// t1.decreaseMinutes(47)
+	// вызывают ошиибку в расчетах, не могу понять как исправить
 }
 
-let t1 = new TTime(3, 45)
+let t1 = new TTime(12, 45)
 // t1.increaseHours(72)
 // t1.increaseMinutes(20)
 
-t1.decreaseHours(4)
+//=========================================================================================
+t1.decreaseHours(12)
+t1.decreaseMinutes(46)
+// document.write(t1)
+//=========================================================================================
 
-document.write(t1)
