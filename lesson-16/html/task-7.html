@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 7</title>
+</head>
+
+<body>
+    <main class="task">
+        <p class="task__description">
+            Подорож складається з 3 етапів. На кожному етапі користувач може вибрати один з видів транспорту (авто,
+            автобус, літак -
+            випадаючий список), харчування (сніданок, обід, вечеря – checkbоx) та одного з 3-х гідів(використати - radio
+            buttons).
+            Ціни визначте самі. Підрахувати загальну вартість.
+        </p>
+        <div class="task__body">
+            <div id="tr-c" class="travel-constructor">
+                <h1 class="travel-constructor__title">Конструктор подорожі</h1>
+                <div class="travel-constructor__stages">
+                    <div class="travel-constructor__stage">
+                        <h3>Етап - 1</h3>
+                        <h2>Оберіть тип транспорту:</h2>
+                        <select name="transport">
+                            <option value="1000">Літак - 1000 грн.</option>
+                            <option value="700">Потяг - 700 грн.</option>
+                            <option value="550">Автобус - 550грн.</option>
+                            <option value="0" selected>*транспорт*</option>
+                        </select>
+                        <h2>Оберіть потрібне харчування:</h2>
+                        <div class="checkbox">
+                            <label for="c_1">
+                                <input value="170" id="c_1" type="checkbox">
+                                Сніданок - 120 грн.
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="c_2">
+                                <input value="150" id="c_2" type="checkbox">
+                                Обід - 150 грн.
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="c_3">
+                                <input value="260" id="c_3" type="checkbox">
+                                Вечеря - 260 грн.
+                            </label>
+                        </div>
+                        <h2>Оберіть гіда:</h2>
+                        <div>
+                            <label>
+                                <input type="radio" name="guide" id="1" value="450">
+                                Тьотя Зіна - 450 грн.
+                            </label> <br>
+                            <label>
+                                <input type="radio" name="guide" id="2" value="777">
+                                Сусід Іван - 777 грн.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="guide" id="3" value="0">
+                                Я і сам собі прекрасний гід - безкоштовно
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="travel-constructor__stage">
+                        <h3>Етап - 2</h3>
+                        <h2>Оберіть тип транспорту:</h2>
+                        <select name="transport2">
+                            <option value="1000">Літак - 1000 грн.</option>
+                            <option value="700">Потяг - 700 грн.</option>
+                            <option value="550">Автобус - 550грн.</option>
+                            <option value="0" selected>*транспорт*</option>
+                        </select>
+                        <h2>Оберіть потрібне харчування:</h2>
+                        <div class="checkbox">
+                            <label for="cc_1">
+                                <input value="170" id="cc_1" type="checkbox">
+                                Сніданок - 120 грн.
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="cc_2">
+                                <input value="150" id="cc_2" type="checkbox">
+                                Обід - 150 грн.
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="cc_3">
+                                <input value="260" id="cc_3" type="checkbox">
+                                Вечеря - 260 грн.
+                            </label>
+                        </div>
+                        <h2>Оберіть гіда:</h2>
+                        <div>
+                            <label>
+                                <input type="radio" name="guide2" id="1" value="450">
+                                Тьотя Зіна - 450 грн.
+                            </label> <br>
+                            <label>
+                                <input type="radio" name="guide2" id="2" value="777">
+                                Сусід Іван - 777 грн.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="guide2" id="3" value="0">
+                                Я і сам собі прекрасний гід - безкоштовно
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="travel-constructor__stage">
+                        <h3>Етап - 3</h3>
+                        <h2>Оберіть тип транспорту:</h2>
+                        <select name="transport3">
+                            <option value="1000">Літак - 1000 грн.</option>
+                            <option value="700">Потяг - 700 грн.</option>
+                            <option value="550">Автобус - 550грн.</option>
+                            <option value="0" selected>*транспорт*</option>
+                        </select>
+                        <h2>Оберіть потрібне харчування:</h2>
+                        <div class="checkbox">
+                            <label for="ccc_1">
+                                <input value="170" id="ccc_1" type="checkbox">
+                                Сніданок - 120 грн.
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="ccc_2">
+                                <input value="150" id="ccc_2" type="checkbox">
+                                Обід - 150 грн.
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="ccc_3">
+                                <input value="260" id="ccc_3" type="checkbox">
+                                Вечеря - 260 грн.
+                            </label>
+                        </div>
+                        <h2>Оберіть гіда:</h2>
+                        <div>
+                            <label>
+                                <input type="radio" name="guide3" id="1" value="450">
+                                Тьотя Зіна - 450 грн.
+                            </label> <br>
+                            <label>
+                                <input type="radio" name="guide3" id="2" value="777">
+                                Сусід Іван - 777 грн.
+                            </label><br>
+                            <label>
+                                <input type="radio" name="guide3" id="3" value="0">
+                                Я і сам собі прекрасний гід - безкоштовно
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="res">Загальна вартість подорожі: <span id="price">0</span> грн.</div>
+            </div>
+            <br>
+        </div>
+    </main>
+    <script src="../js/task-7.js"></script>
+</body>
+
+</html>

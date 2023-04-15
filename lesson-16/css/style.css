@@ -1,0 +1,141 @@
+button {
+	border-radius: 5px;
+	border: 1px solid white;
+	padding: 5px 15px;
+}
+.calculator,
+.converter {
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.calculator__row--buttons {
+	text-align: center;
+}
+input {
+	display: block;
+	max-width: 100%;
+	padding: 0 10px;
+}
+
+.task__body--wishes {
+}
+.wish {
+	border-radius: 20px;
+	border: 1px solid saddlebrown;
+	text-align: center;
+	padding: 15px;
+	transition: all 0.5s ease 0s;
+	opacity: 0;
+	transform: translatey(300%);
+}
+.wish:not(:last-child) {
+	margin-bottom: 20px;
+}
+.loaded .wish {
+	opacity: 1;
+	transform: translate(0);
+}
+.loaded .wish:nth-child(1) {
+}
+.loaded .wish:nth-child(2) {
+	transition-delay: 0.5s;
+}
+.loaded .wish:nth-child(3) {
+	transition-delay: 1s;
+}
+.my-table,
+.my-table * {
+	border: 1px solid green;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.task__bodyyy table {
+	border-spacing: 10px;
+}
+.task__bodyyy *:not(:last-child) {
+	margin-bottom: 10px;
+}
+.travel-constructor input {
+	display: inline-block;
+}
+.travel-constructor h2 {
+	color: yellow;
+}
+button {
+	border-radius: 5px;
+	border: 1px solid white;
+	padding: 5px 15px;
+}
+.calculator,
+.converter {
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.calculator__row--buttons {
+	text-align: center;
+}
+input {
+	display: block;
+	max-width: 100%;
+	padding: 0 10px;
+}
+
+.task__body--wishes {
+}
+.wish {
+	border-radius: 20px;
+	border: 1px solid saddlebrown;
+	text-align: center;
+	padding: 15px;
+	transition: all 0.5s ease 0s;
+	opacity: 0;
+	transform: translatey(300%);
+}
+.wish:not(:last-child) {
+	margin-bottom: 20px;
+}
+.loaded .wish {
+	opacity: 1;
+	transform: translate(0);
+}
+.loaded .wish:nth-child(1) {
+}
+.loaded .wish:nth-child(2) {
+	transition-delay: 0.5s;
+}
+.loaded .wish:nth-child(3) {
+	transition-delay: 1s;
+}
+.my-table,
+.my-table * {
+	border: 1px solid green;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.task__bodyyy table {
+	border-spacing: 10px;
+}
+.task__bodyyy *:not(:last-child) {
+	margin-bottom: 10px;
+}
+.travel-constructor input {
+	display: inline-block;
+}
+.travel-constructor h2 {
+	color: yellow;
+}
+.travel-constructor h3 {
+	color: rgb(56, 56, 166);
+}
+.travel-constructor select {
+	font-size: 24px;
+}
+label {
+	cursor: pointer;
+}

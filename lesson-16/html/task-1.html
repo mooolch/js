@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1</title>
+</head>
+
+<body>
+    <main class="task">
+        <p class="task__description">
+            Калькулятор
+        </p>
+        <div class="task__body">
+            <div class="calculator">
+                <div class="calculator__row">
+                    <label for="num1">
+                        Перше число
+                    </label>
+                    <input id="num1" type="number">
+                </div>
+                <div class="calculator__row">
+                    <label for="num2">
+                        Друге число
+                    </label>
+                    <input id="num2" type="number">
+                </div>
+                <div class="calculator__row calculator__row--buttons">
+                    <button id="sum" type="button">+</button>
+                    <button id="diff" type="button">-</button>
+                    <button id="mult" type="button">*</button>
+                    <button id="div" type="button">/</button>
+                    <button id="del" type="button">del</button>
+                </div>
+                <div class="calculator__row">
+                    <label for="res">
+                        Результат
+                    </label>
+                    <input id="res" type="number" value="" readonly>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/task-1.js"></script>
+</body>
+
+</html>
