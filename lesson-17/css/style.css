@@ -1,0 +1,134 @@
+.active {
+	outline: 2px solid green;
+}
+#parent {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 250px;
+}
+.card__price {
+	text-align: center;
+}
+.card__title-link {
+	align-self: center;
+}
+
+.tb {
+	display: flex;
+	gap: 50px;
+}
+.player {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+	gap: 20px;
+}
+.palyers-list {
+	flex: 0 0 300px;
+	padding: 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	gap: 10px;
+}
+.player img {
+	max-width: 50px;
+}
+.snow {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background: url('../img/les.jpg') no-repeat center/cover;
+}
+.snow__filter {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #00000066;
+}
+.snowflake {
+	position: absolute;
+	border-radius: 50%;
+	background-color: white;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+@keyframes snowstorm0 {
+	0% {
+		opacity: 1;
+	}
+	15% {
+		transform: translateX(50px);
+	}
+	70% {
+		opacity: 0.8;
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(50px);
+		top: 100%;
+		opacity: 0.3;
+	}
+}
+@keyframes snowstorm1 {
+	0% {
+		opacity: 1;
+	}
+	15% {
+		transform: translateX(-50px);
+	}
+	70% {
+		opacity: 0.8;
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(-50px);
+		top: 100%;
+		opacity: 0.3;
+	}
+}
+
+.stars {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background: url('../img/moon2.jpeg') no-repeat center/cover;
+}
+
+.star {
+	position: absolute;
+	border-radius: 50%;
+}
+.tanks {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background: url('../img/field.png') no-repeat center/cover;
+}
+.tank {
+	cursor: pointer;
+	position: absolute;
+	transition: top 0.3s linear 0s;
+}
+.res{
+	position: relative;
+	z-index: 50;
+	color: white;
+	font-weight: normal;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.456);
+}
