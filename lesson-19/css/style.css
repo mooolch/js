@@ -1,0 +1,176 @@
+.red {
+	color: red;
+}
+
+tr {
+	max-width: 100%;
+}
+td {
+	cursor: pointer;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	background-color: gray;
+}
+.tassk {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid green;
+}
+button {
+	border: 1px solid yellow;
+	padding: 5px;
+	border-radius: 10px;
+}
+.hello {
+	cursor: pointer;
+}
+input {
+	padding: 0px 10px;
+	transition: letter-spacing 0.2s ease 0s;
+}
+._focus {
+	letter-spacing: 3px;
+	color: #8a2be2;
+}
+
+.lists-container {
+	display: flex;
+	justify-content: space-around;
+}
+ol {
+	flex: 0 1 15%;
+	text-align: center;
+	border: 1px solid yellow;
+	padding: 10px 20px;
+	border-radius: 5px;
+	position: relative;
+}
+ol::before {
+	content: '';
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;
+	height: 0%;
+	transition: all 1.3s ease-in 0s;
+}
+
+ol.odd::before {
+	background-color: #ff000080;
+	height: 100%;
+}
+
+ol.even::before {
+	background-color: #00800080;
+	height: 100%;
+}
+
+li {
+	position: relative;
+	border: 1px solid blueviolet;
+	padding: 10px;
+	border-radius: 5px;
+}
+li::marker {
+	font-size: 15px;
+}
+.btn-container {
+	text-align: center;
+}
+#btn {
+	padding: 10px 20px;
+}
+
+.tables_3x3 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.cont {
+	padding: 15px;
+	border-radius: 5px;
+}
+._focus_ {
+	outline: 2px solid red;
+}
+
+.tables_3x3 h2 {
+	display: flex;
+	justify-content: space-between;
+}
+.tables_3x3 span {
+	color: #8a2be2;
+}
+.tables_3x3 table {
+	border-collapse: separate;
+	border-spacing: 7px;
+}
+
+form {
+	border: 2px dashed #8a2be2;
+	border-radius: 5px;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 20px;
+}
+label {
+	cursor: pointer;
+	transition: color 0.3s ease 0s;
+}
+label:hover {
+	color: #73499b;
+}
+
+.search-container {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+.search-container__input {
+	width: 100%;
+}
+.search-container__input:focus {
+	background-color: #dcdcb9;
+}
+.search-container li {
+	list-style: none;
+}
+
+.product-cntnr {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid red;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.product-cntnr :nth-child(4) {
+	flex: 0 0 250px;
+}
+.product-btns {
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+	align-items: center;
+}
+.product-btns span {
+	min-width: 30px;
+	text-align: center;
+}
+.product-cntnr button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+}
+img {
+	width: 50px;
+	height: 50px;
+}
+.products > :not(:last-child) {
+	margin-bottom: 20px;
+}
