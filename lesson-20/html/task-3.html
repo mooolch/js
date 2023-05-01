@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3</title>
+</head>
+
+<body>
+    <main class="task">
+        <p class="task__description">
+            Користувач задає місяць навчання учня (перевіряти чи є числом, чи від 1 до 12, чи не канікули) та оцінку
+            (перевіряти чи
+            є числом, чи від 1 до 100). Вивести чи зможе він виправити оцінку (якщо оцінка погана і це не останній
+            місяць у
+            семестрі) . Обробку усіх помилок зробити з використанням відповідних класів.
+        </p>
+        <div class="task__body">
+            <form>
+                <label>
+                    Month: <br>
+                    <input id="month" type="text" required>
+                    <br>
+                </label>
+                <label>
+                    Grade: <br>
+                    <input id="grade" type="text" required>
+                </label> <br>
+                <br>
+                <button type="submit" class="button">Send</button>
+                <div id="res"></div>
+            </form>
+        </div>
+    </main>
+    <script src="../js/task-3.js"></script>
+</body>
+
+</html>
