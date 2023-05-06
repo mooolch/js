@@ -1,0 +1,27 @@
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 300px;
+}
+input {
+	width: 100%;
+}
+button {
+	padding: 5px 15px;
+	border: 2px solid yellow;
+	border-radius: 15px;
+}
+.cnt {
+	display: flex;
+    gap: 5px;
+}
+#inpd{
+	display: block;
+	max-width: 300px;
+}
+.tbd{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
